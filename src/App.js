@@ -46,6 +46,26 @@ function App() {
       >
         How to Create a Static Web Application Using React, GitHub, and Microsoft Azure in a CI/CD Pipeline
       </a>
+
+      <h2>How to Add a Domain Name to a Cloud Provider Website</h2>
+      <p>Download the Word doc below to view the written tutorial:</p>
+      <a
+        href="/files/How to add a domain name to a cloud provider website.docx"
+        download
+      >
+        How to Add a Domain Name to a Cloud Provider Website
+      </a>
+
+      <h2>How to Add Third Party Authentication with Auth0</h2>
+      <p>Download the Word doc below to view the written tutorial:</p>
+      <a
+        href="/files/How to add 3rd party authentication with Auth0.docx"
+        download
+      >
+        How to Add Third Party Authentication with Auth0
+      </a>
+
+
     </div>
   );
 }
