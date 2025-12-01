@@ -12,13 +12,41 @@ function App() {
       {isAuthenticated && (
         <>
           <p>Welcome, {user.name}</p>
-          <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+          <button
+            onClick={() =>
+              logout({ logoutParams: { returnTo: window.location.origin } })
+            }
+          >
             Logout
           </button>
         </>
       )}
+
+      <h1>Lewis Architecture</h1>
+      <p>
+        This is a web client for providing instructions to students and faculty
+        on the various components to learn and teach throughout a Lewis
+        University computer science program.
+      </p>
+
+      <h2>More Information About Future Plans</h2>
+      <p>Click the download link below to see the original Architecture Design:</p>
+      <a
+        href="/files/Architecture Design - Lewis Instructional Software Architecture.pdf"
+        download
+      >
+        Lewis Architecture Design Document
+      </a>
+
+      <h2>How to Create a Static Web Application Using React, GitHub, and Microsoft Azure</h2>
+      <p>Download the Word doc below to view the written tutorial:</p>
+      <a
+        href="/files/How to Create a Static Web Application Using React and Host It on GitHub and Microsoft Azure in a CI_CD Pipeline.docx"
+        download
+      >
+        How to Create a Static Web Application Using React, GitHub, and Microsoft Azure in a CI/CD Pipeline
+      </a>
     </div>
   );
 }
-
 export default App;
