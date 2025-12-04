@@ -1,72 +1,139 @@
 import { useAuth0 } from "@auth0/auth0-react";
+import "./App.css";
 
 function App() {
   const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
 
   return (
-    <div>
-      {!isAuthenticated && (
-        <button onClick={() => loginWithRedirect()}>Login</button>
-      )}
+    <div className="container">
+      {/* HEADER SECTION */}
+      <header className="header">
+        <h1>Lewis Architecture</h1>
 
-      {isAuthenticated && (
-        <>
-          <p>Welcome, {user.name}</p>
-          <button
-            onClick={() =>
-              logout({ logoutParams: { returnTo: window.location.origin } })
-            }
-          >
-            Logout
-          </button>
-        </>
-      )}
+        <div className="auth-controls">
+          {!isAuthenticated ? (
+            <button className="btn" onClick={() => loginWithRedirect()}>
+              Login
+            </button>
+          ) : (
+            <>
+              <p className="welcome">Welcome, {user.name}</p>
+              <button
+                className="btn logout"
+                onClick={() =>
+                  logout({ logoutParams: { returnTo: window.location.origin } })
+                }
+              >
+                Logout
+              </button>
+            </>
+          )}
+        </div>
 
-      <h1>Lewis Architecture</h1>
-      <p>
-        This is a web client for providing instructions to students and faculty
-        on the various components to learn and teach throughout a Lewis
-        University computer science program.
-      </p>
+        <p className="intro">
+          This site provides instructions, tutorials, and resources for Lewis
+          University students and faculty learning software architecture
+          concepts through a modular and extensible curriculum.
+        </p>
+      </header>
 
-      <h2>More Information About Future Plans</h2>
-      <p>Click the download link below to see the original Architecture Design:</p>
-      <a
-        href="/files/Architecture Design - Lewis Instructional Software Architecture.pdf"
-        download
-      >
-        Lewis Architecture Design Document
-      </a>
+      {/* SECTIONS - EASY TO ADD TO */}
+      <section className="section">
+        <h2>Architecture Design Overview</h2>
+        <p>Download the original Architecture Design document:</p>
+        <a
+          className="download-link"
+          href="/files/Architecture Design - Lewis Instructional Software Architecture.pdf"
+          download
+        >
+          Lewis Architecture Design Document
+        </a>
+      </section>
 
-      <h2>How to Create a Static Web Application Using React, GitHub, and Microsoft Azure</h2>
-      <p>Download the Word doc below to view the written tutorial:</p>
-      <a
-        href="/files/How to Create a Static Web Application Using React and Host It on GitHub and Microsoft Azure in a CI_CD Pipeline.docx"
-        download
-      >
-        How to Create a Static Web Application Using React, GitHub, and Microsoft Azure in a CI/CD Pipeline
-      </a>
+      <section className="section">
+        <h2>Level 0 — Start with the Base Code in React</h2>
+        <h4>Skills Acquired:</h4>
+        <ul>
+            <li>Understand what is going on in the baseline code</li>
+            <li>Become more familiar with HTML, CSS, and JS</li>
+            <li>See some of the basics of React and learn what makes it different than developing with just HTML, CSS, and JS</li>
+            <li>Able to clone and work with code locally from the repo in an IDE</li>
+        </ul>
 
-      <h2>How to Add a Domain Name to a Cloud Provider Website</h2>
-      <p>Download the Word doc below to view the written tutorial:</p>
-      <a
-        href="/files/How to add a domain name to a cloud provider website.docx"
-        download
-      >
-        How to Add a Domain Name to a Cloud Provider Website
-      </a>
+        <h4>Resources</h4>
+        <ul>
+            <li>Reference to original code from react.dev: <a href="https://react.dev/learn/tutorial-tic-tac-toe">https://react.dev/learn/tutorial-tic-tac-toe</a></li>
+            <li>Link to GitHub repo with baseline code: <a href="https://github.com/olivia1117/lewis-tac-toe-base">https://github.com/olivia1117/lewis-tac-toe-base</a></li>
+        </ul>
 
-      <h2>How to Add Third Party Authentication with Auth0</h2>
-      <p>Download the Word doc below to view the written tutorial:</p>
-      <a
-        href="/files/How to add 3rd party authentication with Auth0.docx"
-        download
-      >
-        How to Add Third Party Authentication with Auth0
-      </a>
+        <h4>Additional References</h4>
+        <p>Quick Note: Make sure you brush up on basic HTML, CSS, and JS as well as what HTTP is. You can find resources for this also 
+            at the first link below on W3Schools.</p>
+        <ul>
+            <li>W3Schools What is React? - <a href="https://www.w3schools.com/whatis/whatis_react.asp">https://www.w3schools.com/whatis/whatis_react.asp</a></li>
+            <li>React Official Documentation - <a href="https://react.dev/">https://react.dev/</a></li>
+            <li>React Tutorial for Beginners - <a href="https://www.freecodecamp.org/news/react-beginner-handbook/">https://www.freecodecamp.org/news/react-beginner-handbook/</a></li> 
+        </ul>
 
+	
+        <p>Download the written tutorial:</p>
+        <a
+          className="download-link"
+          href="/files/How to start with base tic-tac-toe React code to make new changes.docx"
+          download
+        >
+          How to Start with the Base Code in React and Learn GitHub and Basic Web Development
+        </a>
+      </section>
 
+      <section className="section">
+        <h2>Static Web Applications (React + GitHub + Azure)</h2>
+        <p>Download the written tutorial:</p>
+        <a
+          className="download-link"
+          href="/files/How to Create a Static Web Application Using React and Host It on GitHub and Microsoft Azure in a CI_CD Pipeline.docx"
+          download
+        >
+          How to Create a Static Web Application Using React, GitHub, and Azure
+        </a>
+      </section>
+
+      <section className="section">
+        <h2>Adding a Custom Domain</h2>
+        <p>Download the written tutorial:</p>
+        <a
+          className="download-link"
+          href="/files/How to add a domain name to a cloud provider website.docx"
+          download
+        >
+          How to Add a Domain Name to a Cloud Provider Website
+        </a>
+      </section>
+
+      <section className="section">
+        <h2>Authentication with Auth0</h2>
+        <p>Download the written tutorial:</p>
+        <a
+          className="download-link"
+          href="/files/How to add 3rd party authentication with Auth0.docx"
+          download
+        >
+          How to Add Third Party Authentication with Auth0
+        </a>
+      </section>
+
+      {/* EMPTY FUTURE SECTIONS */}
+      <section className="section future">
+        <h2>Backend + Databases</h2>
+        <p>Coming soon: Node.js, MongoDB Atlas, File Storage tutorials.</p>
+      </section>
+
+      <section className="section future">
+        <h2>Advanced Features</h2>
+        <p>Additional tutorials will be added here for advanced systems.</p>
+      </section>
     </div>
   );
 }
+
 export default App;
