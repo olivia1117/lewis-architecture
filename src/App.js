@@ -87,7 +87,30 @@ function App() {
       </section>
 
       <section className="section">
-        <h2>Static Web Applications (React + GitHub + Azure)</h2>
+        <h2>Level 1 — Lewis-Tac-Toe with React + GitHub + Azure</h2>
+        <h4>Skills Acquired:</h4>
+        <ul>
+            <li>Build off previous code to add more features</li>
+            <li>Learn how to make a CI/CD development pipeline for putting an application online with Azure</li>
+            <li>Continue to learn more about GitHub and how to use it as part of the CI/CD pipeline with GitHub Actions</li>
+        </ul>
+
+        <h4>Resources</h4>
+        <ul>
+            <li>Use your previous code from step 0 for the baseline</li>
+            <li>Link to GitHub repo with sample implementation for this step: <a href="https://github.com/olivia1117/lewis-tac-toe">https://github.com/olivia1117/lewis-tac-toe</a></li>
+        </ul>
+
+        <h4>Additional References</h4>
+        <p>Quick Note: Here are a few other links to better understand Azure, what CI/CD is and how it works, 
+            and a few other topics</p>
+        <ul>
+            <li>YouTube video about different DevOps softwares - <a href="https://www.youtube.com/watch?v=EY1hsh-HCjo">https://www.youtube.com/watch?v=EY1hsh-HCjo</a></li>
+            <li>YouTube video overview of React concepts - <a href="https://youtu.be/wIyHSOugGGw?si=tChZZA4aAk_p-cnQ">https://youtu.be/wIyHSOugGGw?si=tChZZA4aAk_p-cnQ</a></li>
+            <li>Quick YouTube vide overview of DevOps and CI/CD - <a href="https://www.youtube.com/watch?v=scEDHsr3APg">https://www.youtube.com/watch?v=scEDHsr3APg</a></li> 
+        </ul>
+
+
         <p>Download the written tutorial:</p>
         <a
           className="download-link"
