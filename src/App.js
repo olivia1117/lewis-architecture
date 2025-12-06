@@ -114,7 +114,7 @@ function App() {
         <p>Download the written tutorial:</p>
         <a
           className="download-link"
-          href="/files/How to Create a Static Web Application Using React and Host It on GitHub and Microsoft Azure in a CI_CD Pipeline.docx"
+          href="/files/How to set up a react application online with GitHub and Azure CICD pipeline.docx"
           download
         >
           How to Create a Static Web Application Using React, GitHub, and Azure
@@ -122,7 +122,7 @@ function App() {
       </section>
 
       <section className="section">
-        <h2>Adding a Custom Domain</h2>
+        <h2>Level 2 - Lewis-Tac-Toe with Custom Domain and Authentication </h2>
         <p>Download the written tutorial:</p>
         <a
           className="download-link"
@@ -134,7 +134,7 @@ function App() {
       </section>
 
       <section className="section">
-        <h2>Authentication with Auth0</h2>
+        <h2>Level 3 - Lewis-Tac-Toe with Node.js Server and MongoDB Atlas</h2>
         <p>Download the written tutorial:</p>
         <a
           className="download-link"
@@ -145,16 +145,11 @@ function App() {
         </a>
       </section>
 
-      {/* EMPTY FUTURE SECTIONS */}
-      <section className="section future">
-        <h2>Backend + Databases</h2>
-        <p>Coming soon: Node.js, MongoDB Atlas, File Storage tutorials.</p>
+      <section className="section">
+        <h2>Level 4 - Lewis-Tac-Toe with Server-Side File Storage and Sharing</h2>
+        <p>Download the written tutorial:</p>
       </section>
 
-      <section className="section future">
-        <h2>Advanced Features</h2>
-        <p>Additional tutorials will be added here for advanced systems.</p>
-      </section>
     </div>
   );
 }
