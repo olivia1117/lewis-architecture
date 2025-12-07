@@ -123,13 +123,45 @@ function App() {
 
       <section className="section">
         <h2>Level 2 - Lewis-Tac-Toe with Custom Domain and Authentication </h2>
-        <p>Download the written tutorial:</p>
+        <h4>Skills Acquired:</h4>
+        <ul>
+            <li>Build off existing codebase to implement a custom domain name with GoDaddy</li>
+            <li>Use Auth0 to add authentication to allow users to have their own profile through an existing
+              email account and add more security to the application</li>
+            <li>Use React to add a few other features that can only be accessed when a user signs in such as 
+              seeing their game stats</li>
+        </ul>
+
+        <h4>Resources</h4>
+        <ul>
+            <li>Use your previous code from step 1 for the baseline</li>
+            <li>Link to GitHub repo with sample implementation: <a href="https://github.com/olivia1117/lewis-tac-toe-game">https://github.com/olivia1117/lewis-tac-toe-game</a></li>
+        </ul>
+
+        <h4>Additional References</h4>
+        <p>Quick Note: Here are a few other links to better understand custom domains, hosting, DNS, and more</p>
+        <ul>
+            <li>Article from Cloudflare about DNS - <a href="https://www.cloudflare.com/learning/dns/what-is-dns/">https://www.cloudflare.com/learning/dns/what-is-dns/</a></li>
+            <li>YouTube video about the difference between web and domain hosting - <a href="https://www.youtube.com/watch?v=wXyQiBy0kjk">https://www.youtube.com/watch?v=wXyQiBy0kjk</a></li>
+            <li>YouTube video with another explanation of DNS - <a href="https://www.youtube.com/watch?v=mpQZVYPuDGU">https://www.youtube.com/watch?v=mpQZVYPuDGU</a></li> 
+            <li>Article from AWS about CORS - <a href="https://aws.amazon.com/what-is/cross-origin-resource-sharing/">https://aws.amazon.com/what-is/cross-origin-resource-sharing/</a></li>
+            <li>Article from Dev.to about Authentication and Authorization - <a href="https://dev.to/divine_nnanna2/authentication-and-authorization-techniques-in-modern-web-applications-2okl">https://dev.to/divine_nnanna2/authentication-and-authorization-techniques-in-modern-web-applications-2okl</a></li>
+        </ul>
+        <p>Download the written tutorials:</p>
         <a
           className="download-link"
           href="/files/How to add a domain name to a cloud provider website.docx"
           download
         >
           How to Add a Domain Name to a Cloud Provider Website
+        </a>
+        <a
+          className="download-link"
+          href="/files/How to add 3rd party authentication with Auth0.docx"
+          download
+        >
+          How to Add Third Party Authentication with Auth0  
+
         </a>
       </section>
 
