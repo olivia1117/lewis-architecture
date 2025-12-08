@@ -10,7 +10,7 @@ function App() {
       <header className="header">
         <h1>Lewis Architecture</h1>
 
-        <div className="auth-controls">
+        {/* <div className="auth-controls">
           {!isAuthenticated ? (
             <button className="btn" onClick={() => loginWithRedirect()}>
               Login
@@ -28,7 +28,7 @@ function App() {
               </button>
             </>
           )}
-        </div>
+        </div> */}
 
         <p className="intro">
           This site provides instructions, tutorials, and resources for Lewis
@@ -167,19 +167,51 @@ function App() {
 
       <section className="section">
         <h2>Level 3 - Lewis-Tac-Toe with Node.js Server and MongoDB Atlas</h2>
+        <h4>Skills Acquired:</h4>
+        <ul>
+            <li>Use work from level 2 to add functionality for a database and a server</li>
+            <li>Learn how to set up a separate Node.js server through Azure and GitHub CI/CD pipeline</li>
+            <li>Learn how to use MongoDB as a NoSQL DB to track login times/history and display them to the React web app</li>
+        </ul>
+
+        <h4>Resources</h4>
+        <ul>
+            <li>Use your previous code from step 2 for the baseline</li>
+            <li>Link to GitHub repo with sample implementation: <a href="https://github.com/olivia1117/lewis-tac-toe-game">https://github.com/olivia1117/lewis-tac-toe-game</a></li>
+        </ul>
+
         <p>Download the written tutorial:</p>
         <a
           className="download-link"
-          href="/files/How to add 3rd party authentication with Auth0.docx"
+          href="/files/How to add a server-side NoSQL DB.docx"
           download
         >
-          How to Add Third Party Authentication with Auth0
+          How to Add a Server-Side NoSQL Database with Node.js and MongoDB Atlas
         </a>
       </section>
 
       <section className="section">
         <h2>Level 4 - Lewis-Tac-Toe with Server-Side File Storage and Sharing</h2>
+        <h4>Skills Acquired:</h4>
+        <ul>
+            <li>Use work from level 3 to build on previous database and server functionality to now allow for file uploads, 
+              downloads, display, and storage</li>
+            <li>Continue to visualize and understand how the client and server model works to communicate with each other and to a database</li>
+        </ul>
+
+        <h4>Resources</h4>
+        <ul>
+            <li>Use your previous code from step 3 for the baseline</li>
+            <li>Link to GitHub repo with sample implementation: <a href="https://github.com/olivia1117/lewis-tac-toe-game">https://github.com/olivia1117/lewis-tac-toe-game</a></li>
+        </ul>
         <p>Download the written tutorial:</p>
+        <a
+          className="download-link"
+          href="/files/How to add server-side file storage and sharing.docx"
+          download
+        >
+          How to Add a Server-Side File Storage and Sharing System with Node.js and MongoDB GridFS
+        </a>
       </section>
 
     </div>
